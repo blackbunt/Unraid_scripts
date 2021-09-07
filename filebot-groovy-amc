@@ -1,0 +1,11 @@
+Filebot 
+groovy
+
+Series
+
+{n.replaceTrailingBrackets().space('_')}-{'S'+s.pad(2)+'E'}{e.pad(2)}-{t.removeAll(/[!,?.]+$/).replaceAll(/[`´‘’ʻ]/, "'")
+.lowerTrail().clean().space('_')}
+
+Movies
+
+{n.space('_').clean()}-{y}
